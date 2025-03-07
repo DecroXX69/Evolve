@@ -32,24 +32,28 @@ const Contact = () => {
               
               <div className="d-flex mb-4">
                 <div className="contact-icon me-3">
-                  <FaPhone />
+                <FaPhone />
                 </div>
-                <div>
-                  <h4 className="text-primary fw-bold">Phone</h4>
+              <div>
+                  <h4 className="text-primary fw-bold" style={{ textDecoration: 'none', color: 'inherit' }}>Phone</h4>
+                  <a href="tel:+919457011160" style={{ textDecoration: 'none', color: 'inherit' }}>
                   <p className="mb-1">+91 94570 11160</p>
-                  <p>+91 98221 90245</p>
-                </div>
+                  </a>
+                  </div>
               </div>
-              
+
               <div className="d-flex mb-4">
                 <div className="contact-icon me-3">
-                  <FaEnvelope />
+                <FaEnvelope />
                 </div>
-                <div>
-                  <h4 className="text-primary fw-bold">Email</h4>
+              <div>
+                  <h4 className="text-primary fw-bold" style={{ textDecoration: 'none', color: 'inherit' }}>Email</h4>
+                  <a href="mailto:info@evolverealty.com" style={{ textDecoration: 'none', color: 'inherit' }}>
                   <p>info@evolverealty.com</p>
-                </div>
+                  </a>
               </div>
+            </div>
+
               
               <div className="d-flex mb-4">
                 <div className="contact-icon me-3">
