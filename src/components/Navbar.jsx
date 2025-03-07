@@ -4,7 +4,7 @@ import './Navbar.css';
 const Navbar = ({ activeSection, scrollToSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = ['home', 'concept', 'events', 'marketing', 'tools', 'team', 'solutions', 'portfolio', 'partners', 'contact'];
+  const navItems = ['home', 'solutions', 'portfolio', 'partners', 'contact'];
 
   const handleNavClick = (sectionId) => {
     scrollToSection(sectionId);
