@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact" className="contact py-5">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="fw-bold">CONTACT PAGE WITH ALL LINKS</h2>
+          <h2 className="fw-bold">CONTACT US</h2>
           <div className="divider"></div>
         </div>
         
