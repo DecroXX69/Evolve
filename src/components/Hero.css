@@ -1,58 +1,102 @@
 /* Hero.css - Hero section styles */
 .hero {
-    background: linear-gradient(to right, #1a237e, #0d47a1);
-    color: white;
-    padding: 100px 0 80px;
+  background: linear-gradient(to right, #1a237e, #0d47a1);
+  color: white;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.hero .btn {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero carousel container */
+.hero-carousel-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: rotate(3deg);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hero carousel */
+.hero-carousel {
+  width: 100%;
+}
+
+/* Ensure images are visible */
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Override Bootstrap's carousel styles if needed */
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .hero {
+    text-align: center;
+    padding: 80px 0 60px;
   }
   
-  .hero h1 {
-    margin-bottom: 1.5rem;
-    font-weight: 700;
+  .hero-carousel-container {
+    margin-top: 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .hero p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+  .carousel-image {
+    height: 300px;
   }
   
-  .hero .btn {
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  .carousel-item {
+    height: 300px;
   }
-  
-  .hero .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .hero-image-container {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    transform: rotate(3deg);
-    transition: all 0.3s ease;
-  }
-  
-  .hero-image-container:hover {
-    transform: rotate(0deg);
-  }
-  
-  .hero-image-container img {
-    border-radius: 4px;
-  }
-  
-  @media (max-width: 767.98px) {
-    .hero {
-      text-align: center;
-      padding: 80px 0 60px;
-    }
-    
-    .hero-image-container {
-      margin-top: 2rem;
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+}
