@@ -28,7 +28,7 @@ const Solutions = () => {
         <div className="row g-4">
           <div className="col-md-6">
             <div className="card h-100">
-              <div className="card-header bg-primary text-white">
+              <div className="card-header text-white">
                 <h3 className="fs-5 fw-bold mb-0">Regional Market Expertise</h3>
               </div>
               <div className="card-body">
