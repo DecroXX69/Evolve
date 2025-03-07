@@ -1,0 +1,61 @@
+/* Portfolio.css - Portfolio section styles */
+.portfolio {
+    background-color: white;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio-item img {
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+  }
+  
+  .portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 51, 0.8), transparent);
+    padding: 1.5rem;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .portfolio-overlay h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolio-overlay p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #cdd0d6;
+  }
+  
+  .portfolio .btn {
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
