@@ -1,12 +1,19 @@
 import React from 'react';
 import './Partners.css';
+import partner1 from '../assets/partner1.png';
+import partner2 from '../assets/partner2.jpeg';
+import partner3 from '../assets/partner3.png';
+import partner4 from '../assets/partner4.jpeg';
+import partner5 from '../assets/partner5.png';
+import partner6 from '../assets/partner6.png';
+const partnerImages = [partner1, partner2, partner3, partner4, partner5, partner6];
 
 const Partners = () => {
-  // Generate array of 6 partners
-  const partners = Array.from({ length: 6 }, (_, i) => ({
+  // Generate array of partners with imported images
+  const partners = partnerImages.map((image, i) => ({
     id: i + 1,
     name: `Partner ${i + 1}`,
-    image: `https://via.placeholder.com/180x80`
+    image
   }));
 
   return (
