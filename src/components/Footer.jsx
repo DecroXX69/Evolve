@@ -9,11 +9,11 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6 mb-3 mb-md-0">
-            <h2 className="fw-bold text-white mb-0">EVOLVE REALTY</h2>
-            <p className="text-muted mt-2 mb-0">Adding the third dimension to your sales efforts</p>
+            <h2 className="fw-bold mb-0" style={{color:'#1a237e'}}>EVOLVE REALTY</h2>
+            <p className="text-muted mt-2 mb-0" style={{fontWeight:'bold'}}>Your Ultimate One-Stop Solution for Effortless Property Buying</p>
           </div>
           <div className="col-md-6 text-md-end">
-            <p className="text-muted mb-0">
+            <p className="text-muted mb-0" style={{fontWeight:'bold'}}>
               &copy; {currentYear} Evolve Realty. All rights reserved.
             </p>
           </div>
