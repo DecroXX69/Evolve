@@ -169,7 +169,7 @@ const Contact = () => {
           
           <div className="col-lg-6">
             <div className="contact-form">
-              <h3 className="fs-2 fw-bold mb-4 text-primary">Send Us a Message</h3>
+              <h3 className="fs-2 fw-bold mb-4 text-primary1" style={{color:'var(--theme-color)'}}>Send Us a Message</h3>
               
               <form>
                 <div className="mb-3">
@@ -215,7 +215,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 
-                <button type="submit" className="btn btn-primary w-100 py-2 fw-bold">
+                <button type="submit" className="btn btn-primary w-100 py-2 fw-bold" style={{background:'var(--theme-color)'}}>
                   Send Message
                 </button>
               </form>
