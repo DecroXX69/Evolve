@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import logo from '../assets/logo.png'; // Import the logo image
 
 const Navbar = ({ activeSection, scrollToSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,10 @@ const Navbar = ({ activeSection, scrollToSection }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div className="container">
-        <span className="navbar-brand fw-bold text-primary">EVOLVE REALTY</span>
+        {/* Logo */}
+        <a className="navbar-brand" href="/">
+          <img src={logo} alt="Evolve Realty Logo" className="logo" />
+        </a>
         
         {/* Mobile Menu Button */}
         <button 

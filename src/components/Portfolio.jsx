@@ -1,13 +1,21 @@
 import React from 'react';
 import './Portfolio.css';
-
+import image1 from '../assets/img1.jpg'
+import image2 from '../assets/img2.jpg'
+import image3 from '../assets/img3.jpg'
+import image4 from '../assets/img4.jpg'
+import image5 from '../assets/img5.jpg'
+import image6 from '../assets/img6.jpg'
 const Portfolio = () => {
-  // Generate array of 6 items for the portfolio grid
-  const portfolioItems = Array.from({ length: 6 }, (_, i) => ({
+  // Define an array of images for the portfolio items
+  const images = [image1, image2, image3, image4, image5, image6];
+
+  // Generate array of portfolio items
+  const portfolioItems = images.map((image, i) => ({
     id: i + 1,
     title: `Property Expo ${i + 1}`,
     location: 'Mumbai, 2024',
-    image: `https://via.placeholder.com/400x300`
+    image // ✅ Assign the correct image path
   }));
 
   return (
